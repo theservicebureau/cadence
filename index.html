@@ -640,16 +640,6 @@
               </div>
             </div>
 
-            <!-- Paper Portfolio -->
-            <div class="card" style="flex:1;">
-              <h3>Paper Portfolio</h3>
-              <div class="portfolio-summary">
-                <div class="portfolio-stat"><div class="ps-label">Value</div><div class="ps-value" style="color:#fff;">$${pf.totalValue.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0})}</div></div>
-                <div class="portfolio-stat"><div class="ps-label">Return</div><div class="ps-value ${ret>=0?'pnl-pos':'pnl-neg'}">${ret>=0?'+':''}${ret.toFixed(1)}%</div></div>
-                <div class="portfolio-stat"><div class="ps-label">Position</div><div class="ps-value" style="color:${pf.btc>0?'#00c853':'#ffc107'};">${pf.btc>0?'In BTC':'Cash'}</div></div>
-                ${tip ? `<div class="portfolio-stat"><div class="ps-label">Duration</div><div class="ps-value" style="color:#fff;">${tip.days}d</div></div>` : ''}
-              </div>
-            </div>
           </div>
         </div>
 
